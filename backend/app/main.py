@@ -6,7 +6,7 @@ from app.api.auth import router as auth_router
 from app.api.billing import router as billing_router
 
 app = FastAPI(
-    title="NovaMind AI API",
+    title="Kutane AI API",
     description="AI Customer Support Triage with PayPal billing",
     version="0.4.0",
 )

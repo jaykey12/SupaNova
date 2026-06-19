@@ -2,8 +2,8 @@ import analyticsMock from '../mocks/analytics-mock.json'
 import kbMock from '../mocks/kb-mock.json'
 import ticketsMock from '../mocks/tickets-mock.json'
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://novamind-api-kfzb.onrender.com'
-const KB_STORAGE_KEY = 'novamind_kb_documents'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://kutane-api-kfzb.onrender.com'
+const KB_STORAGE_KEY = 'kutane_kb_documents'
 
 function toIsoDate(value) {
   if (!value) return new Date().toISOString()
@@ -280,7 +280,7 @@ export async function getTicketById(ticketId) {
   }
 }
 
-export async function claimTicket(ticketId, agentName = 'NovaMind Agent') {
+export async function claimTicket(ticketId, agentName = 'Kutane Agent') {
   const payload = {
     agent_id: agentName.toLowerCase().replace(/\s+/g, '-'),
     agent_name: agentName,
@@ -423,9 +423,3 @@ export async function deleteKnowledgeBaseDocument(documentId) {
 
   return { success: true }
 }
-/home/engine/.bashrc: line 1: syntax error near unexpected token `('
-/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
-/home/engine/.bashrc: line 1: syntax error near unexpected token `('
-/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
-/home/engine/.bashrc: line 1: syntax error near unexpected token `('
-/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'

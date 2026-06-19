@@ -1,1 +1,1 @@
-"""API routers for NovaMind backend."""
+"""API routers for Kutane backend."""

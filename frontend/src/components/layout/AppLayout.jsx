@@ -20,13 +20,13 @@ function AppLayout({ children }) {
   const title =
     location.pathname.startsWith('/tickets/')
       ? 'Ticket Detail'
-      : titleByPath[location.pathname] || 'NovaMind AI'
+      : titleByPath[location.pathname] || 'Kutane AI'
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 lg:flex">
       <aside className="hidden w-60 border-r border-slate-200 bg-white p-4 lg:flex lg:flex-col">
         <div>
-          <h1 className="text-xl font-semibold text-indigo-600">NovaMind AI</h1>
+          <h1 className="text-xl font-semibold text-indigo-600">Kutane AI</h1>
           <p className="mt-1 text-xs text-slate-500">Support Triage MVP</p>
         </div>
 
@@ -62,7 +62,7 @@ function AppLayout({ children }) {
       <div className="flex min-h-screen flex-1 flex-col">
         <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-slate-200 bg-white px-4 lg:px-8">
           <div>
-            <p className="text-xs uppercase tracking-wide text-slate-500">NovaMind / {location.pathname}</p>
+            <p className="text-xs uppercase tracking-wide text-slate-500">Kutane / {location.pathname}</p>
             <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
           </div>
 

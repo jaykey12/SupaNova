@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
-        <Link to="/" className="text-xl font-bold text-indigo-600">NovaMind AI</Link>
+        <Link to="/" className="text-xl font-bold text-indigo-600">Kutane AI</Link>
         <div className="hidden items-center gap-6 md:flex">
           <Link to="/pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900">Pricing</Link>
           <Link to="/signup" className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">Start Free Trial</Link>

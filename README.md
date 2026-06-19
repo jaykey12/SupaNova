@@ -1,6 +1,6 @@
-# NovaMind AI — Customer Support Triage MVP
+# Kutane AI — Customer Support Triage MVP
 
-NovaMind AI helps businesses automate workflows, improve customer engagement, and increase productivity through intelligent AI solutions.
+Kutane AI helps businesses automate workflows, improve customer engagement, and increase productivity through intelligent AI solutions.
 
 This repo now includes an MVP backend for **AI Customer Support Triage**, plus frontend scaffold and dev infrastructure.
 
@@ -14,7 +14,7 @@ This repo now includes an MVP backend for **AI Customer Support Triage**, plus f
 ## Repository Structure
 
 ```text
-novamind-ai/
+kutane-ai/
 ├── backend/
 │   ├── app/
 │   │   ├── api/

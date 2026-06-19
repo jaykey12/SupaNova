@@ -3,7 +3,7 @@ import bcrypt
 import jwt
 from datetime import datetime, timedelta, timezone
 
-JWT_SECRET = os.getenv("JWT_SECRET", "novamind-dev-secret-change-in-prod")
+JWT_SECRET = os.getenv("JWT_SECRET", "kutane-dev-secret-change-in-prod")
 JWT_EXPIRATION_HOURS = int(os.getenv("JWT_EXPIRATION_HOURS", "72"))
 
 def hash_password(password: str) -> str:

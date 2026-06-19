@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 
-const API = import.meta.env.VITE_API_URL || 'https://novamind-api-kfzb.onrender.com'
+const API = import.meta.env.VITE_API_URL || 'https://kutane-api-kfzb.onrender.com'
 
 export default function SignupPage() {
   const [email, setEmail] = useState('')
@@ -29,7 +29,7 @@ export default function SignupPage() {
       localStorage.setItem('token', data.token)
       localStorage.setItem('user_id', data.user_id)
       localStorage.setItem('email', data.email)
-      toast.success('Account created! Welcome to NovaMind AI')
+      toast.success('Account created! Welcome to Kutane AI')
       navigate('/dashboard')
     } catch (err) {
       toast.error(err.message)
@@ -40,7 +40,7 @@ export default function SignupPage() {
 
   return (
     <div className="mx-auto max-w-md px-4 py-16">
-      <h1 className="text-center text-3xl font-bold text-slate-900">Create Your NovaMind AI Account</h1>
+      <h1 className="text-center text-3xl font-bold text-slate-900">Create Your Kutane AI Account</h1>
       <p className="mt-2 text-center text-sm text-slate-500">Start your 14-day free trial. No credit card required.</p>
 
       <form className="mt-8 flex flex-col gap-4" onSubmit={handleSubmit}>

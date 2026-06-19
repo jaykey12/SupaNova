@@ -1,4 +1,4 @@
-"""Domain and persistence models for NovaMind backend."""
+"""Domain and persistence models for Kutane backend."""
 
 from app.models.db_models import KbDocumentModel, SlackInstallationModel, TicketModel
 

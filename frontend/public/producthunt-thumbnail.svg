@@ -47,7 +47,7 @@
   <line x1="684" y1="420" x2="552" y2="530" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-dasharray="8,4"/>
 
   <!-- Title text -->
-  <text x="512" y="810" text-anchor="middle" fill="white" font-size="72" font-weight="bold" font-family="system-ui" letter-spacing="2">NovaMind AI</text>
+  <text x="512" y="810" text-anchor="middle" fill="white" font-size="72" font-weight="bold" font-family="system-ui" letter-spacing="2">Kutane AI</text>
   <text x="512" y="880" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="32" font-family="system-ui">Your AI Team That Never Sleeps</text>
 
   <!-- Bottom accent bar -->

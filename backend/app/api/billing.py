@@ -38,6 +38,28 @@ async def get_subscription(user_id: str):
         return SubscriptionResponse(id="", plan_tier="free", status="none")
     return SubscriptionResponse(id=sub.id, plan_tier=sub.plan_tier, status=sub.status, cancel_at_period_end=sub.cancel_at_period_end)
 
+@router.post("/token")
+async def get_paypal_token():
+    """Get a PayPal access token for client-side operations."""
+    from app.services.subscriptions import get_paypal_access_token
+    token = await get_paypal_access_token()
+    return {"access_token": token}
+
+@router.post("/cancel/{subscription_id}")
+async def cancel_subscription(subscription_id: str):
+    """Cancel a PayPal subscription."""
+    token = await get_paypal_access_token()
+    async with httpx.AsyncClient() as client:
+        resp = await client.post(
+            f"{PAYPAL_API_BASE}/v1/billing/subscriptions/{subscription_id}/cancel",
+            json={"reason": "Customer requested cancellation"},
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        )
+        if not resp.ok:
+            raise HTTPException(status_code=400, detail="Failed to cancel subscription")
+    await svc.update_status(subscription_id, "canceled")
+    return {"status": "canceled"}
+
 @router.post("/webhook")
 async def paypal_webhook(request: Request):
     payload_raw = await request.body()
@@ -54,4 +76,4 @@ async def paypal_webhook(request: Request):
     }
     if event_type in status_map and sub_id:
         await svc.update_status(sub_id, status_map[event_type])
-    return {"received": True}
+    return {"received": True}/home/engine/.bashrc: line 1: syntax error near unexpected token `('
