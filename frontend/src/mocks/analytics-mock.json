@@ -1,0 +1,57 @@
+{
+  "date_range": { "from": "2025-05-15", "to": "2025-05-22" },
+  "total_tickets": 142,
+  "open_tickets": 23,
+  "resolved_today": 18,
+  "avg_response_time_minutes": 4.2,
+  "ticket_volume": [
+    { "date": "2025-05-15", "count": 18, "auto_replied": 8, "escalated": 10 },
+    { "date": "2025-05-16", "count": 22, "auto_replied": 10, "escalated": 12 },
+    { "date": "2025-05-17", "count": 15, "auto_replied": 7, "escalated": 8 },
+    { "date": "2025-05-18", "count": 12, "auto_replied": 5, "escalated": 7 },
+    { "date": "2025-05-19", "count": 25, "auto_replied": 12, "escalated": 13 },
+    { "date": "2025-05-20", "count": 20, "auto_replied": 8, "escalated": 12 },
+    { "date": "2025-05-21", "count": 30, "auto_replied": 14, "escalated": 16 }
+  ],
+  "by_category": {
+    "billing": 45,
+    "technical": 62,
+    "feature_request": 22,
+    "complaint": 13
+  },
+  "by_priority": {
+    "high": 45,
+    "medium": 25,
+    "low": 30
+  },
+  "sentiment_breakdown": {
+    "positive": 78,
+    "neutral": 42,
+    "negative": 22
+  },
+  "ai_performance": {
+    "auto_reply_rate": 42,
+    "ai_accuracy": 88,
+    "escalation_rate": 58,
+    "total_processed": 142
+  },
+  "response_times": {
+    "avg_minutes": 4.2,
+    "p50_minutes": 2.1,
+    "p95_minutes": 12.8,
+    "trend": [
+      { "date": "2025-05-15", "avg_minutes": 3.8 },
+      { "date": "2025-05-16", "avg_minutes": 4.1 },
+      { "date": "2025-05-17", "avg_minutes": 5.2 },
+      { "date": "2025-05-18", "avg_minutes": 3.5 },
+      { "date": "2025-05-19", "avg_minutes": 4.8 },
+      { "date": "2025-05-20", "avg_minutes": 4.0 },
+      { "date": "2025-05-21", "avg_minutes": 4.2 }
+    ]
+  },
+  "recent_unresolved": [
+    { "id": "ticket_001", "subject": "Can't log in after password reset", "priority": "high", "created_at": "2025-05-22T10:30:00Z" },
+    { "id": "ticket_002", "subject": "Refund not processed", "priority": "medium", "created_at": "2025-05-22T09:15:00Z" },
+    { "id": "ticket_003", "subject": "Feature request: dark mode", "priority": "low", "created_at": "2025-05-22T08:00:00Z" }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tickets": [
+    {
+      "id": "ticket_001",
+      "subject": "Can't log in after password reset",
+      "customer_name": "Jane Smith",
+      "customer_email": "jane@example.com",
+      "category": "technical",
+      "priority": "high",
+      "status": "open",
+      "classification": {
+        "intent": "login_issue",
+        "sentiment": "frustrated",
+        "confidence": 0.94,
+        "suggested_action": "route_to_level_2",
+        "knowledge_match": {
+          "article_id": "kb_001",
+          "title": "Password Reset Troubleshooting",
+          "similarity": 0.87
+        }
+      },
+      "conversation": [
+        {
+          "role": "customer",
+          "content": "Hi, I reset my password this morning but now I can't log in. It keeps saying 'invalid credentials'.",
+          "timestamp": "2025-05-22T10:30:00Z"
+        },
+        {
+          "role": "ai",
+          "content": "I'm sorry you're having trouble. Let me check our knowledge base for you...\n\nHere are some steps to try:\n1. Clear your browser cache and cookies\n2. Use the 'Forgot Password' link to set a new password\n3. Try logging in from a different browser",
+          "timestamp": "2025-05-22T10:30:15Z"
+        },
+        {
+          "role": "customer",
+          "content": "Still doesn't work. I've tried all of that. This is urgent - I have a deadline today.",
+          "timestamp": "2025-05-22T10:35:00Z"
+        }
+      ],
+      "notes": [],
+      "created_at": "2025-05-22T10:30:00Z",
+      "updated_at": "2025-05-22T10:35:00Z"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 20,
+    "total": 1,
+    "total_pages": 1
+  }
+}

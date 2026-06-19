@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)" rx="60"/>
+
+  <!-- Decorative top glow -->
+  <rect width="1024" height="400" fill="url(#glow)" rx="60"/>
+
+  <!-- Grid dots -->
+  <g fill="rgba(255,255,255,0.08)">
+    <circle cx="100" cy="100" r="3"/><circle cx="200" cy="100" r="3"/>
+    <circle cx="300" cy="100" r="3"/><circle cx="400" cy="100" r="3"/>
+    <circle cx="500" cy="100" r="3"/><circle cx="600" cy="100" r="3"/>
+    <circle cx="700" cy="100" r="3"/><circle cx="800" cy="100" r="3"/>
+    <circle cx="900" cy="100" r="3"/>
+  </g>
+
+  <!-- Three AI node circles -->
+  <circle cx="340" cy="340" r="110" stroke="rgba(255,255,255,0.3)" stroke-width="4" fill="none"/>
+  <circle cx="340" cy="340" r="80" stroke="white" stroke-width="6" fill="rgba(255,255,255,0.1)"/>
+  <text x="340" y="352" text-anchor="middle" fill="white" font-size="64" font-weight="bold" font-family="system-ui">AI</text>
+
+  <circle cx="684" cy="340" r="110" stroke="rgba(255,255,255,0.3)" stroke-width="4" fill="none"/>
+  <circle cx="684" cy="340" r="80" stroke="white" stroke-width="6" fill="rgba(255,255,255,0.1)"/>
+  <text x="684" y="352" text-anchor="middle" fill="white" font-size="64" font-weight="bold" font-family="system-ui">⚡</text>
+
+  <!-- Connecting lines between nodes -->
+  <line x1="420" y1="340" x2="604" y2="340" stroke="rgba(255,255,255,0.3)" stroke-width="3" stroke-dasharray="12,6"/>
+
+  <!-- Bottom hub -->
+  <circle cx="512" cy="590" r="120" stroke="rgba(255,255,255,0.3)" stroke-width="4" fill="none"/>
+  <circle cx="512" cy="590" r="90" stroke="white" stroke-width="6" fill="rgba(255,255,255,0.15)"/>
+  <polyline points="472,590 505,623 552,567" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Connecting lines to hub -->
+  <line x1="340" y1="420" x2="472" y2="530" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-dasharray="8,4"/>
+  <line x1="684" y1="420" x2="552" y2="530" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Title text -->
+  <text x="512" y="810" text-anchor="middle" fill="white" font-size="72" font-weight="bold" font-family="system-ui" letter-spacing="2">NovaMind AI</text>
+  <text x="512" y="880" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="32" font-family="system-ui">Your AI Team That Never Sleeps</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="362" y="920" width="300" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+</svg>

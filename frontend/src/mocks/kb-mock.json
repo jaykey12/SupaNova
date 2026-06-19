@@ -1,0 +1,28 @@
+{
+  "documents": [
+    {
+      "id": "kb_001",
+      "name": "Password-Reset-Guide.pdf",
+      "file_type": "pdf",
+      "chunk_count": 12,
+      "size_bytes": 245000,
+      "updated_at": "2025-05-22T08:00:00Z"
+    },
+    {
+      "id": "kb_002",
+      "name": "Shipping-Policy.md",
+      "file_type": "md",
+      "chunk_count": 4,
+      "size_bytes": 12000,
+      "updated_at": "2025-05-21T14:30:00Z"
+    },
+    {
+      "id": "kb_003",
+      "name": "FAQ-Common-Issues.txt",
+      "file_type": "txt",
+      "chunk_count": 8,
+      "size_bytes": 34000,
+      "updated_at": "2025-05-19T10:00:00Z"
+    }
+  ]
+}
