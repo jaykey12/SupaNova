@@ -15,7 +15,7 @@ export default function LandingPage() {
 
       <section className="border-t bg-slate-50 py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <h2 className="text-center text-2xl font-bold text-slate-900">Three Ways NovaMind AI Powers Your Business</h2>
+          <h2 className="text-center text-2xl font-bold text-slate-900">Three Ways Kutane AI Powers Your Business</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[
               { emoji: '💬', title: 'AI Customer Support', desc: 'Resolve 60-70% of tickets automatically with AI triage and KB auto-reply.' },

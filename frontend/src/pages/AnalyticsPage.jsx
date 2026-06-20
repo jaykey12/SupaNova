@@ -67,7 +67,7 @@ function AnalyticsPage() {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
-    link.download = `novamind-analytics-${range}.csv`
+    link.download = `kutane-analytics-${range}.csv`
     link.click()
     URL.revokeObjectURL(url)
   }

@@ -1,4 +1,4 @@
--- Phase 2 schema for NovaMind AI
+-- Phase 2 schema for Kutane AI
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 

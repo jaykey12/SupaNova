@@ -123,7 +123,7 @@ class SlackService:
         return {
             "response_type": "ephemeral",
             "text": (
-                "📊 *NovaMind AI Stats*\n"
+                "📊 *Kutane AI Stats*\n"
                 f"Total: {analytics.total_tickets} | "
                 f"Resolved: {analytics.resolved_tickets} | "
                 f"Open: {analytics.unresolved_tickets}"
@@ -151,9 +151,9 @@ class SlackService:
             "response_type": "ephemeral",
             "text": (
                 prefix
-                + "🔍 *NovaMind AI Commands*\n"
-                "`/novamind recent` — Show recent tickets\n"
-                "`/novamind stats` — Show summary stats\n"
-                "`/novamind search <query>` — Search KB"
+                + "🔍 *Kutane AI Commands*\n"
+                "`/kutane recent` — Show recent tickets\n"
+                "`/kutane stats` — Show summary stats\n"
+                "`/kutane search <query>` — Search KB"
             ),
         }

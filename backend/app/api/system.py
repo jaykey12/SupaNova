@@ -10,4 +10,4 @@ def health_check() -> dict[str, str]:
 
 @router.get("/")
 def root() -> dict[str, str]:
-    return {"message": "Welcome to NovaMind AI API"}
+    return {"message": "Welcome to Kutane AI API"}

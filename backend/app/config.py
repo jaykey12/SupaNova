@@ -28,7 +28,7 @@ def get_settings() -> Settings:
         USE_DATABASE=_as_bool(os.getenv("USE_DATABASE"), default=False),
         DATABASE_URL=os.getenv(
             "DATABASE_URL",
-            "postgresql+asyncpg://postgres:postgres@localhost:5432/novamind",
+            "postgresql+asyncpg://postgres:postgres@localhost:5432/kutane",
         ),
         DATABASE_ECHO=_as_bool(os.getenv("DATABASE_ECHO"), default=False),
         DATABASE_POOL_SIZE=int(os.getenv("DATABASE_POOL_SIZE", "5")),

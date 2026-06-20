@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
-            <h3 className="text-lg font-bold text-indigo-600">NovaMind AI</h3>
+            <h3 className="text-lg font-bold text-indigo-600">Kutane AI</h3>
             <p className="mt-2 text-sm text-slate-500">Your AI team that never sleeps.</p>
           </div>
           <div>
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-slate-200 pt-6 text-center text-xs text-slate-400">© 2025 NovaMind AI, Inc.</div>
+        <div className="mt-8 border-t border-slate-200 pt-6 text-center text-xs text-slate-400">© 2025 Kutane AI, Inc.</div>
       </div>
     </footer>
   )

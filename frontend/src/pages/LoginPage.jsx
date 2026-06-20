@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 
-const API = import.meta.env.VITE_API_URL || 'https://novamind-api-kfzb.onrender.com'
+const API = import.meta.env.VITE_API_URL || 'https://kutane-api-kfzb.onrender.com'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
